@@ -1,5 +1,4 @@
 # pacup
-
 Simplify package updates
 
 Ubuntu系のディストリで、パッケージのアップデートをする際に　`sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update`　と入力するのを `sudo pacup`　といった風に短縮するためのコマンドです.
