@@ -4,7 +4,7 @@ if [ `whoami` != 'root' ]; then
   exit
 fi
 
-sudo cp ./pacup.sh /usr/local/bin/pacup
+sudo cp -f ./pacup.sh /usr/local/bin/pacup
 sudo chmod +x /usr/local/bin/pacup
 echo "Success!"
 
