@@ -10,13 +10,13 @@ EOM
 }
 
 function update_y() {
-    sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update
+    apt update && apt full-upgrade -y && apt autoremove -y && snap refresh && flatpak update
     exit 0
 }
 
 if [ `whoami` != 'root' ]; then
     echo "管理者権限で実行してください"
-    exit 0
+    exit 1
 fi
 
 while getopts ":h:y" optKey; do
@@ -29,5 +29,5 @@ while getopts ":h:y" optKey; do
     	  ;;
     esac
 done
-sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update
+update_y
 exit 0
