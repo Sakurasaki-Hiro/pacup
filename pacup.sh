@@ -10,7 +10,7 @@ EOM
 }
 
 function update_y() {
-    sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update
+    apt update && apt full-upgrade -y && apt autoremove -y && snap refresh && flatpak update
     exit 0
 }
 
@@ -29,5 +29,5 @@ while getopts ":h:y" optKey; do
     	  ;;
     esac
 done
-sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo snap refresh && flatpak update
+apt update && apt full-upgrade -y && apt autoremove -y && snap refresh && flatpak update
 exit 0
