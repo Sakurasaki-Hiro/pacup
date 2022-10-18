@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 function usage() {
     cat <<EOM
 Usage: $(basename "$0") [OPTION]...
@@ -16,7 +16,7 @@ function update_y() {
 
 if [ `whoami` != 'root' ]; then
     echo "管理者権限で実行してください"
-    exit 0
+    exit 1
 fi
 
 while getopts ":h:y" optKey; do
@@ -29,5 +29,5 @@ while getopts ":h:y" optKey; do
     	  ;;
     esac
 done
-apt update && apt full-upgrade -y && apt autoremove -y && snap refresh && flatpak update
+update_y
 exit 0
