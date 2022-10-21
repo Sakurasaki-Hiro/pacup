@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 function usage() {
     cat <<EOM
 Usage: $(basename "$0") [OPTION]...
@@ -31,3 +31,4 @@ while getopts ":h:y" optKey; do
 done
 update_y
 exit 0
+Footer
