@@ -29,9 +29,6 @@ while (($#>0)); do
   shift
 done
 
-function PACUP_USR() {
-  : #USR
-}
 function PACUP_SYS() {
   : #SYS
 }
@@ -51,7 +48,7 @@ if [ "$PACUP_MOD" == "apt" ]; then
   exit 0
 fi
 
-PACUP_USR
+#FPK
 PACUP_SYS
 if [ $? != 0 ]; then
   echo -e "\nRoot(管理者)権限を要求しています｡\nもう一度お試しください｡\n"

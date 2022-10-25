@@ -21,12 +21,11 @@ fi
 
 command -v snap >/dev/null 2>&1
 if [ $? == 0 ] && [ ! -f /usr/bin/wslfetch ]; then
-   sed -i -e "/^  : #USR$/a \ \ snap refresh" ./pacup
    sed -i -e "/^  : #SYS$/a \ \ sudo snap refresh" ./pacup
 fi
 command -v flatpak >/dev/null 2>&1
 if [ $? == 0 ]; then
-   sed -i -e "/^  : #USR$/a \ \ flatpak update" ./pacup
+   sed -i -e "/^#FPK$/a flatpak update" ./pacup
    sed -i -e "/^  : #SYS$/a \ \ sudo flatpak update" ./pacup
 fi
 
