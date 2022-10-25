@@ -15,7 +15,7 @@ if [ `whoami` != 'root' ]; then
 fi
 
 if [ ! -f ./pacup ]; then
- echo -e "\"pacup\" ファイルが見つかりませんでした\n"
+  echo -e "\"pacup\" ファイルが見つかりませんでした\n"
   exit 1
 fi
 
@@ -25,7 +25,7 @@ if [ $? == 0 ] && [ ! -f /usr/bin/wslfetch ]; then
 fi
 command -v flatpak >/dev/null 2>&1
 if [ $? == 0 ]; then
-   sed -i -e "/^#FPK$/a flatpak update" ./pacup
+   sed -i -e "s/#FPK/flatpak update/g" ./pacup
    sed -i -e "/^  : #SYS$/a \ \ sudo flatpak update" ./pacup
 fi
 
