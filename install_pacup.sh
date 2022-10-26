@@ -26,7 +26,6 @@ fi
 command -v flatpak >/dev/null 2>&1
 if [ $? == 0 ]; then
    sed -i -e "s/#FPK/flatpak update/g" ./pacup
-   sed -i -e "/^  : #SYS$/a \ \ sudo flatpak update" ./pacup
 fi
 
 cp -f ./pacup /usr/local/bin/pacup
