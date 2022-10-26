@@ -9,7 +9,8 @@ Debian系 もしくは Debian派生系のディストリビューションで、
 ```
 sudo apt install -y git
 sudo git clone https://github.com/Sakurasaki-Hiro/pacup
-sudo ./pacup/install_pacup.sh
+cd pacup
+sudo bash install_pacup.sh
 ```
 
 ## 詳細
