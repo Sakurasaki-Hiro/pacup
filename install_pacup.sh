@@ -30,6 +30,6 @@ fi
 
 cp -f ./pacup /usr/local/bin/pacup
 chmod +rx /usr/local/bin/pacup
-cp -f ./pacup_Manual.txt ~/Desktop
+cp -f ./pacup_Manual.txt ~/デスクトップ
 echo "Success!"
 exit 0
