@@ -31,9 +31,9 @@ fi
 cp -f ./pacup /usr/local/bin/pacup
 chmod +rx /usr/local/bin/pacup
 
-if [ -f ../デスクトップ ]; then
+if [ -d ../デスクトップ ]; then
     cp -f ./pacup_Manual.txt ../デスクトップ
-elif [ -f ../Desktop ]; then
+elif [ -d ../Desktop ]; then
     cp -f ./pacup_Manual.txt ../Desktop
 else
     echo "マニュアルファイルのコピーをスキップしました"
