@@ -23,6 +23,7 @@ sudo pacup
 Q. もし「Flatpak」、「Snap」を追加したり、
 削除した場合は、以下のコマンドを実行してください。
 ========================================
+sudo rm /usr/local/bin/pacup
 cd ~/pacup
 sudo bash install_pacup.sh
 ========================================
