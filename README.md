@@ -3,7 +3,7 @@
 
 Debian系 もしくは Debian派生系のディストリビューションで、パッケージのアップデートをする際に  
 `sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo snap refresh && flatpak update`  
-と入力するのを `pacup` として**大幅に短縮する**コマンドです.
+と入力するのを `sudo pacup` として**大幅に短縮する**コマンドです.
 
 ## インストール方法
 ```
