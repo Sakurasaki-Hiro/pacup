@@ -14,5 +14,5 @@ sudo bash install_pacup.sh
 ```
 
 ## 詳細
-元は [**EtupOS**](https://etupos.penginn.com/)の開発者である [**ペンえぬ**](https://twitter.com/NNpen128)さんが作ったコマンドです｡  
+元は **EtupOS**](https://etupos.penginn.com/)の開発者である **ペンえぬ**さんが作ったコマンドです｡  
 そこに､ ｢[**Flatpak**](https://flatpak.org/)｣ と ｢[**Snap**](https://snapcraft.io/)｣ を追加したのが､ この ***pacup*** です｡
