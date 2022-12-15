@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=pacup
+Comment=Linux更新プログラム
+GenericName=Linux Updater Program
+Exec=sudo pacup -y
+Terminal=true
+Type=Application
+Icon=system-software-update
+Categories=System;Settings;
+StartupNotify=true
