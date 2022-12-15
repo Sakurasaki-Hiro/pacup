@@ -31,6 +31,8 @@ fi
 cp -f ./pacup /usr/local/bin/pacup
 chmod +rx /usr/local/bin/pacup
 
+cp -f ./pacup.desktop /usr/local/share/applications
+
 if [ -d ../デスクトップ ]; then
     cp -f ./pacup_Manual.txt ../デスクトップ
 elif [ -d ../Desktop ]; then
