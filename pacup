@@ -31,6 +31,7 @@ done
 
 function PACUP_SYS() {
   : #SYS
+  sudo snap refresh
 }
 
 function PACUP_APT() {
@@ -48,15 +49,26 @@ if [ "$PACUP_MOD" == "apt" ]; then
   exit 0
 fi
 
-#FPK
+echo -e "Flatpakパッケージをアップデートします"
+flatpak update
+echo -e "Flatpakパッケージをアップデートしました"
+sleep 5
+echo -e "\nSnapパッケージをアップデートします"
 PACUP_SYS
 if [ $? != 0 ]; then
-  echo -e "\nRoot(管理者)権限を要求しています｡\nもう一度お試しください｡\n"
+  echo -e "\nRoot(管理者)権限を要求しています｡\nもう一度お試しください｡"
   PACUP_SYS
   if [ $? != 0 ]; then
     echo -e "\n権限の昇格に失敗したため､ 実行を終了しました｡"
     exit 1
   fi
 fi
+echo -e "Snapパッケージをアップデートしました"
+
+echo -e "\nDebianパッケージをアップデートします"
 PACUP_APT
+echo -e "Debianパッケージをアップデートしました"
+
+sleep 7
+
 exit 0
