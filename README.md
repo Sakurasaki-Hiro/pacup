@@ -5,7 +5,7 @@ Debian系 もしくは Debian派生系のディストリビューションで、
 `sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo snap refresh && flatpak update`  
 と入力するのを `pacup` として**大幅に短縮する**コマンドです.
 
-## 「pacup」のインストール方法
+## 「pacup」のインストール方法／アップデート方法
 ①[インストール用シェルスクリプト](https://dl.dropboxusercontent.com/s/2lutkal30bnq3rx/pacup-installer.sh?dl=1)を[ダウンロード](https://dl.dropboxusercontent.com/s/2lutkal30bnq3rx/pacup-installer.sh?dl=1)する
 
 ②以下のコマンドを実行してインストールする
