@@ -7,6 +7,7 @@ Debian系 もしくは Debian派生系のディストリビューションで、
 
 ## 「pacup」のインストール方法
 ①[インストール用シェルスクリプト](https://dl.dropboxusercontent.com/s/2lutkal30bnq3rx/pacup-installer.sh?dl=1)を[ダウンロード](https://dl.dropboxusercontent.com/s/2lutkal30bnq3rx/pacup-installer.sh?dl=1)する
+
 ②以下のコマンドを実行してインストールする
 ```
 sudo bash pacup-installer.sh
