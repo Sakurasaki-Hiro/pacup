@@ -10,6 +10,7 @@ Debian系 もしくは Debian派生系のディストリビューションで、
 
 ②以下のコマンドを実行してインストールする
 ```
+cd ダウンロード
 sudo bash pacup-installer.sh
 ```
 
