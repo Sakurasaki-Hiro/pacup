@@ -29,9 +29,12 @@ while (($#>0)); do
   shift
 done
 
+function PACUP_FPK() {
+  : #FPK
+}
+
 function PACUP_SYS() {
   : #SYS
-  sudo snap refresh
 }
 
 function PACUP_APT() {
@@ -50,7 +53,7 @@ if [ "$PACUP_MOD" == "apt" ]; then
 fi
 
 echo -e "Flatpakパッケージをアップデートします"
-flatpak update
+PACUP_FPK()
 echo -e "Flatpakパッケージをアップデートしました"
 
 echo -e "\nSnapパッケージをアップデートします"
