@@ -52,7 +52,7 @@ fi
 echo -e "Flatpakパッケージをアップデートします"
 flatpak update
 echo -e "Flatpakパッケージをアップデートしました"
-sleep 5
+
 echo -e "\nSnapパッケージをアップデートします"
 PACUP_SYS
 if [ $? != 0 ]; then
