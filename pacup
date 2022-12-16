@@ -53,7 +53,7 @@ if [ "$PACUP_MOD" == "apt" ]; then
 fi
 
 echo -e "Flatpakパッケージをアップデートします"
-PACUP_FPK()
+PACUP_FPK
 echo -e "Flatpakパッケージをアップデートしました"
 
 echo -e "\nSnapパッケージをアップデートします"
