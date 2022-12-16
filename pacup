@@ -56,12 +56,8 @@ echo -e "Flatpakパッケージをアップデートしました"
 echo -e "\nSnapパッケージをアップデートします"
 PACUP_SYS
 if [ $? != 0 ]; then
-  echo -e "\nRoot(管理者)権限を要求しています｡\nもう一度お試しください｡"
-  PACUP_SYS
-  if [ $? != 0 ]; then
-    echo -e "\n権限の昇格に失敗したため､ 実行を終了しました｡"
-    exit 1
-  fi
+   echo -e "\n権限の昇格に失敗したため､ 実行を終了しました｡"
+   exit 1
 fi
 echo -e "Snapパッケージをアップデートしました"
 
