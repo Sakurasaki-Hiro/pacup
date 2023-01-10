@@ -15,8 +15,8 @@ sudo bash pacup-installer.sh
 ```
 
 ## 詳細
-元々は「[**EtupOS**](https://etupos.penginn.com)」の開発者である「**ペンえぬ**」さんが作ったコマンドです｡  
-そこに､ ｢[**Flatpak**](https://flatpak.org)｣ と ｢[**Snap**](https://snapcraft.io)｣ を追加したのが､ この「***pacup***」です｡
+「**EtupOS**」の開発者である「**ペンえぬ**」さんが作ったオリジナルのアップデートコマンド「**pacup**」をもとに、「**桜咲ヒロ**」が、 ｢[**Flatpak**](https://flatpak.org)｣ と ｢[**Snap**](https://snapcraft.io)｣ のアップデート機能を追加し、「**シューゴ**」さんがコマンドの調整や一部機能の追加を行いました。
+そして、「**桜咲ヒロ**」が、Linux初心者がより使いやすくなるように軽度なGUI化（Desktopファイルの追加）を行い、パスワードの入力だけで実行できるようになりました。
 
 ## コマンド制作者
 - **ペンえぬ**　（テンプレートを作成）
