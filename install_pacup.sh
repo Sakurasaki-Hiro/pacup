@@ -31,6 +31,10 @@ fi
 cp -f ./pacup /usr/local/bin/pacup
 chmod +rx /usr/local/bin/pacup
 
+if [ ! -d /usr/local/share/applications ]; then
+    mkdir -p /usr/local/share/applications
+fi
+
 cp -f ./pacup.desktop /usr/local/share/applications
 
 if [ -d ../デスクトップ ]; then
