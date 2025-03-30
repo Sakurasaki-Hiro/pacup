@@ -39,7 +39,7 @@ function PACUP_SYS() {
 
 function PACUP_APT() {
   sudo apt update
-  sudo apt$PACUP_YES full-upgrade
+  sudo apt$PACUP_YES upgrade
   sudo apt$PACUP_YES autoremove
 }
 
